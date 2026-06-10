@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build CortexOS",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-Wall", "-Wextra", "-std=c99", "-O2", "-Isrc",
+                "src/main.c", "src/shell.c", "src/users.c",
+                "src/security.c", "src/filesystem.c", "src/process.c",
+                "src/scheduler.c", "src/memory.c", "src/network.c",
+                "src/database.c", "src/blockchain.c", "src/backup.c",
+                "src/apps.c", "src/logs.c",
+                "-o", "CortexOS.exe",
+                "-lws2_32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "Build & Run CortexOS",
+            "type": "shell",
+            "command": "gcc -Wall -Wextra -std=c99 -O2 -Isrc src/main.c src/shell.c src/users.c src/security.c src/filesystem.c src/process.c src/scheduler.c src/memory.c src/network.c src/database.c src/blockchain.c src/backup.c src/apps.c src/logs.c -o CortexOS.exe -lws2_32 && .\\CortexOS.exe",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": "$gcc"
+        }
+    ]
+}

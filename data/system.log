@@ -1,0 +1,17 @@
+--- CortexOS Session Started ---
+[2026-06-10 15:52:46] [INFO] : CortexOS starting up.
+[2026-06-10 15:52:46] [AUTH] : New user registered: admin
+[2026-06-10 15:52:46] [INFO] : All subsystems initialised.
+[2026-06-10 15:53:25] [AUTH] : New user registered: raj
+[2026-06-10 15:53:36] [AUTH] raj: User logged in: raj
+[2026-06-10 15:53:36] [FS] raj: mkdir: /home/raj
+[2026-06-10 15:57:18] [INFO] raj: Email sent.
+[2026-06-10 15:59:28] [WARN] raj: Unknown command: 0
+[2026-06-10 16:01:12] [WARN] raj: Unknown command: calculator
+[2026-06-10 16:02:08] [FS] raj: touch: /home/raj/todo.txt
+[2026-06-10 16:02:29] [AUTH] raj: User logged out: raj
+[2026-06-10 16:02:34] [INFO] : CortexOS shutdown.
+--- CortexOS Session Started ---
+[2026-06-10 16:02:43] [INFO] : CortexOS starting up.
+[2026-06-10 16:02:43] [INFO] : All subsystems initialised.
+[2026-06-10 16:02:46] [INFO] : CortexOS shutdown.
