@@ -7,4 +7,3 @@ if exist CortexOS.exe (
     echo.
     CortexOS.exe
 )
-
